@@ -43,15 +43,6 @@ const cities = [
 const container = document.getElementById('destinos-container');
 
 const select = document.createElement('select');
-select.style.width = '100%';
-select.style.padding = '10px';
-select.style.fontSize = '16px';
-select.style.border = '1px solid #ccc';
-select.style.borderRadius = '4px';
-select.style.boxSizing = 'border-box';
-
-// llevarme esto al CSS
-
 
   cities.forEach(city => {
   const option = document.createElement('option');
