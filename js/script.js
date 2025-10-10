@@ -1,16 +1,16 @@
 const viajes = [
   {
-    title: "Viaje 1",
+    title: "Marbella",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut fermentum justo. Duis euismod massa non augue euismod ultricies. Sed lobortis dignissim lorem, pharetra",
     url_img: "./assets/banner/2.jpg"
   },
   {
-    title: "Viaje 2",
+    title: "Barcelona",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut fermentum justo. Duis euismod massa non augue euismod ultricies. Sed lobortis dignissim lorem, pharetra",
     url_img: "./assets/banner/3.jpg"
   },
   {
-    title: "Viaje 3",
+    title: "Ibiza",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut fermentum justo. Duis euismod massa non augue euismod ultricies. Sed lobortis dignissim lorem, pharetra",
     url_img: "./assets/banner/4.jpg"
   }
@@ -20,19 +20,12 @@ const result = document.getElementById("viajes-container")
 
 for (let viaje of viajes) {
 result.innerHTML += `
-  <li class="card">
+  <article class="card">
   <img src=${viaje.url_img} alt=${viaje.url_img}/>
   <h2>${viaje.title}</h2>
   <p>${viaje.description}</p>
-  </li>
+  </article>
   `}
-
-result.style.fontSize = "10px"
-result.style.display = "flex"
-result.style.gap = "10px"
-result.style.alignItems = "left"
-
-
 
 const cities = [
 "Madrid",
@@ -56,6 +49,9 @@ select.style.fontSize = '16px';
 select.style.border = '1px solid #ccc';
 select.style.borderRadius = '4px';
 select.style.boxSizing = 'border-box';
+
+// llevarme esto al CSS
+
 
   cities.forEach(city => {
   const option = document.createElement('option');
